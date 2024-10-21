@@ -1,0 +1,121 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  
+  .imageContainer {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .imageContainer {
+      width: 50%;
+    }
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @media (min-width: 768px) {
+    .productDetails {
+      width: 50%;
+    }
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #16a34a; /* Verde */
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    color: #4b5563; /* Gris */
+    margin-bottom: 1rem;
+  }
+  
+  .stock {
+    font-size: 0.875rem;
+    color: #6b7280; /* Gris más claro */
+    margin-bottom: 1rem;
+  }
+  
+  .quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb; /* Gris claro */
+    border-radius: 9999px; /* Para hacer el botón circular */
+    color: #4b5563; /* Gris oscuro */
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #d1d5db; /* Gris un poco más oscuro */
+  }
+  
+  .quantity {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .addToCartButton {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #2563eb; /* Azul */
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #1d4ed8; /* Azul más oscuro */
+  }
+  
+  .addToCartButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
